@@ -5,10 +5,29 @@
     <title>Exercice 6</title>
   </head>
   <body>
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
+    <script language="javascript">
+          function changerimage(url,objet) {
+          objet.src=url;
+          }
+          function retourimage(url,objet) {
+          objet.src=url;
+          }
+    </script>
+
+    <img src="images/image1.jpg" id="img1" name="img1" onMouseOver="changerimage('images/image1_2.jpg',this)"
+    onMouseOut="retourimage('images/image1.jpg',this)">
+
+    <img src="images/image2.jpg" id="img2" name="img2" onMouseOver="changerimage('images/image2_2.jpg',this)"
+    onMouseOut="changerimage('images/image2.jpg',this)">
+
+    <img src="images/image3.jpg" id="img3" name="img3" onMouseOver="changerimage('images/image3_2.jpg',this)"
+    onMouseOut="changerimage('images/image3.jpg',this)">
+
+    <img src="images/image4.jpg" id="img3" name="img3" onMouseOver="changerimage('images/image4_2.jpg',this)"
+    onMouseOut="changerimage('images/image4.jpg',this)">
+
+    <img src="images/image5.jpg" id="img3" name="img3" onMouseOver="changerimage('images/image5_2.jpg',this)"
+    onMouseOut="changerimage('images/image5.jpg',this)">
+
   </body>
 </html>

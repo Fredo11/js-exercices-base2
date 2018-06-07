@@ -5,11 +5,23 @@
   <title>Exercice 4</title>
 </head>
 <body>
-  <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
-    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
-    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
-    <button type="button" name="button">RAZ</button>
+  <form id="formulaire" >
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="defaut1" id="nom"  />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="defaut2" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="defaut3" id="ville" />
+    <input type="text" name="" value="Fredo"/>
+    <input  onclick="vider()" type="reset" name="button" value="RAZ"/>
   </form>
+<!--Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.-->
+<script type="text/javascript">
+      function vider(){
+          document.getElementById("formulaire").reset();
+
+      }
+
+
+</script>
+
+
 </body>
 </html>

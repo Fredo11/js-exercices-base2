@@ -6,7 +6,19 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="nom">Votre nom  : </label>
+    <input type="text" name="nom" value="" id="nom" onkeypress="mafonction()";/>
   </form>
+<!--Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ
+dès que l'on appuie sur le clavier.-->
+  <script type="text/javascript">
+        function mafonction(){
+
+          $dd=document.getElementById('nom').value;
+          alert ($dd);
+                }
+
+
+  </script>
 </body>
 </html>
